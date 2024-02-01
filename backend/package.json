@@ -1,0 +1,61 @@
+{
+  "name": "hrmis-db",
+  "description": "HRMIS Server",
+  "version": "0.0.0",
+  "homepage": "",
+  "main": "src",
+  "keywords": [
+    "feathers"
+  ],
+  "author": {
+    "name": "Robert Soriano",
+    "email": "sorianorobertc@gmail.com"
+  },
+  "contributors": [],
+  "bugs": {},
+  "directories": {
+    "lib": "src",
+    "test": "test/"
+  },
+  "engines": {
+    "node": "^8.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "scripts": {
+    "test": "npm run eslint && npm run mocha",
+    "eslint": "eslint src/. test/. --config .eslintrc.json",
+    "start": "node src/",
+    "mocha": "mocha test/ --recursive --exit",
+    "dev": "nodemon src/"
+  },
+  "dependencies": {
+    "@feathersjs/authentication": "^2.1.2",
+    "@feathersjs/authentication-jwt": "^2.0.0",
+    "@feathersjs/authentication-local": "^1.1.0",
+    "@feathersjs/configuration": "^1.0.2",
+    "@feathersjs/errors": "^3.3.0",
+    "@feathersjs/express": "^1.2.0",
+    "@feathersjs/feathers": "^3.1.3",
+    "@feathersjs/socketio": "^3.2.0",
+    "axios": "^0.18.0",
+    "compression": "^1.7.1",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.4",
+    "feathers-nedb": "^2.7.0",
+    "feathers-nedb-fuzzy-search": "^1.1.1",
+    "generate-password": "^1.7.1",
+    "helmet": "^3.9.0",
+    "jwt-decode": "^4.0.0",
+    "nedb": "^1.8.0",
+    "password-validator": "^5.3.0",
+    "serve-favicon": "^2.4.5",
+    "winston": "^2.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.17.0",
+    "mocha": "^4.1.0",
+    "nodemon": "^3.0.1",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2"
+  }
+}
